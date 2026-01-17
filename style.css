@@ -1,0 +1,104 @@
+body {
+    /* Fondo negro profundo para resaltar el dorado */
+    background-color: #000000; 
+    /* Texto blanco suave (hueso) para máxima elegancia */
+    color: #ffffff;           
+    font-family: 'Segoe UI', serif; /* Cambié a serif para un toque más clásico */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    /* Fondo negro con un sutil degradado a gris muy oscuro */
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    width: 100%;
+    padding: 60px 0; /* Más aire para que se vea premium */
+    text-align: center;
+    /* Línea inferior en Dorado Metálico */
+    border-bottom: 3px solid #74640a; 
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    
+    /* Creamos el degradado dorado con un centro más blanco (el brillo) */
+    background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fcf6ba, #bf953f);
+    background-size: 200% auto;
+    
+    /* Este truco hace que el color se aplique solo a las letras */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Activamos la animación */
+    animation: brillo-metalico 3s linear infinite;
+}
+
+/* Definimos el movimiento del brillo */
+@keyframes brillo-metalico {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.tarjeta-servicios {
+    background-color: #74640a;
+    margin-top: -30px;
+    padding: 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+    
+    /* Borde sutil dorado */
+    border: 1px solid #d4af37;
+    position: relative;
+    overflow: hidden;
+}
+
+.item {
+    /* Fondo negro para los servicios dentro de la tarjeta blanca */
+    background: #1a1a1a;
+    color: #ffffff;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-align: left;
+    border-left: 4px solid #d4af37; /* Detalle dorado a la izquierda */
+    transition: all 0.4s ease;
+}
+
+.item:hover {
+    /* Al pasar el mouse, el fondo se vuelve dorado y el texto negro */
+    transform: translateX(10px); /* Se mueve a la derecha en lugar de crecer */
+    background: #d4af37;
+    color: #000000;
+}
+
+.contacto {
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    font-weight: bold;
+    color: #ffffff; /* Texto negro sobre la tarjeta blanca */
+    text-align: center;
+    margin-top: 25px;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+/* Esto quita el subrayado y mantiene el color original del texto */
+.enlace-especial {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Esto hace que toda la caja sea clickeable, no solo el texto */
+}
+
+/* Para que al pasar el mouse se mantenga el efecto de los otros botones */
+.enlace-especial:hover {
+    background-color: #475569; /* O el color de hover que elegiste antes */
+    transform: scale(1.05);
+}
