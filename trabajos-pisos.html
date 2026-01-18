@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lavados JP - Suelos y Pisos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contenedor-galeria {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 95%;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        .fila-trabajo {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: stretch;
+        }
+        .caja-foto {
+            flex: 1;
+            text-align: center;
+            background: #111;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+        .caja-foto.dorado {
+            border: 2px solid #d4af37;
+        }
+        .etiqueta {
+            margin: 0;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body style="background-color: #000; color: white; font-family: 'Segoe UI', sans-serif; padding-bottom: 80px;">
+
+    <header style="padding: 50px 20px; text-align: center;">
+        <h1 style="color: #d4af37; font-size: 2.5rem; margin-bottom: 10px;">RESTAURACIÓN DE PISOS</h1>
+        <p style="color: #888;">Resultados reales en limpieza de superficies</p>
+    </header>
+
+    <div class="contenedor-galeria">
+
+        <div class="fila-trabajo">
+            <div class="caja-foto">
+                <p class="etiqueta" style="background: #222;">Antes</p>
+                <img src="c:\Users\mati\Downloads\pisos 1.jpg" alt="Piso Sucio">
+            </div>
+            <div class="caja-foto dorado">
+                <p class="etiqueta" style="background: #d4af37; color: black;">Después</p>
+                <img src="c:\Users\mati\Downloads\pisos 2.jpg" alt="Piso Limpio">
+            </div>
+        </div>
+
+        <div class="fila-trabajo">
+            <div class="caja-foto">
+                <p class="etiqueta" style="background: #222;">Antes</p>
+                <img src="c:\Users\mati\Downloads\p3.jpg">
+            </div>
+            <div class="caja-foto dorado">
+                <p class="etiqueta" style="background: #d4af37; color: black;">Después</p>
+                <img src="c:\Users\mati\Downloads\p4.jpg">
+            </div>
+        </div>
+
+        <div class="fila-trabajo">
+            <div class="caja-foto">
+                <p class="etiqueta" style="background: #222;">Antes</p>
+                <img src="c:\Users\mati\Downloads\p5.jpg">
+            </div>
+            <div class="caja-foto dorado">
+                <p class="etiqueta" style="background: #d4af37; color: black;">Después</p>
+                <img src="c:\Users\mati\Downloads\p6.jpg">
+            </div>
+        </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 50px;">
+        <a href="index.html" style="color: #d4af37; text-decoration: none; font-weight: bold; border: 2px solid #d4af37; padding: 15px 35px; border-radius: 50px;">
+             VOLVER AL INICIO
+        </a>
+    </div>
+
+</body>
+</html>
